@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+}
+
+apply plugin: 'idea'
+apply plugin: 'io.spring.dependency-management'
+
+group 'gongbuanham'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'com.h2database:h2'
+    compile 'org.projectlombok:lombok'
+
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.+'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.+'
+}
