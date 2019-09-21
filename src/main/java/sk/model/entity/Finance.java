@@ -16,7 +16,7 @@ public class Finance {
 
   @Id
   @GeneratedValue
-  long finance_no;
+  long financeNo;
 
   String year;
 
