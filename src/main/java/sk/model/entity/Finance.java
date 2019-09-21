@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
+import sk.model.enums.Bank;
 
 /**
  * @author doyoung hwang on 2019-09-20
@@ -42,5 +43,20 @@ public class Finance {
     finance.setHana(Integer.parseInt(columns[5]));
 
     return finance;
+  }
+
+  public int getAmount(Bank bank) {
+    switch (bank) {
+      case kb:
+        return kb;
+      case hana:
+        return hana;
+      case woori:
+        return woori;
+      case shinhan:
+        return shinhan;
+    }
+
+    return 0;
   }
 }
