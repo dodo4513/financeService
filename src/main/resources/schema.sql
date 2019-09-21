@@ -8,3 +8,10 @@ CREATE TABLE finance
   woori      int                               not null,
   hana       int                               not null
 );
+
+CREATE TABLE member
+(
+  member_no BIGINT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  id        varchar(20)                       NOT NULL,
+  password  VARCHAR(20)                       NOT NULL
+);

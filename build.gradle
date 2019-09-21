@@ -21,6 +21,9 @@ dependencies {
     compile 'com.h2database:h2'
     compile 'org.projectlombok:lombok'
 
+    // TODO 1 JWT lib
+    compile 'io.jsonwebtoken:jjwt:0.9.1'
+
     compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.+'
     compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.+'
 }
